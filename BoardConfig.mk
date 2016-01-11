@@ -17,6 +17,20 @@
 
 TARGET_OTA_ASSERT_DEVICE := hltexx,SM-N9005,hltetmo,SM-N900T,hltecan,SM-N900W8,hlteatt,SM-N900A,hlte,hlteskt,hltektt,SM-N900S,SM-N900K
 
+# Optimizations
+CLANG_O3 := true
+STRICT_ALIASING := false
+KRAIT_TUNINGS := false
+GRAPHITE_OPTS := false
+ENABLE_GCCONLY := true
+
+#Kernel Toolchain
+KERNEL_TOOLCHAIN := $(ANDROID_BUILD_TOP)/prebuilts/gcc/$(HOST_OS)-x86/arm/arm-eabi-5.3-uber/bin
+KERNEL_TOOLCHAIN_PREFIX := arm-eabi-
+
+# Rom Toolchain
+TARGET_GCC_VERSION_EXP := 5.3-uber
+
 # Init
 TARGET_INIT_VENDOR_LIB := libinit_msm
 TARGET_LIBINIT_DEFINES_FILE := device/samsung/hlte/init/init_hlte.cpp

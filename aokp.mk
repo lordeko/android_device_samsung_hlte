@@ -15,4 +15,4 @@ PRODUCT_DEVICE := hlte
 PRODUCT_NAME := aokp_hlte
 
 PRODUCT_COPY_FILES += \
-    vendor/aokp/prebuilt/bootanimation/bootanimation_1080.zip:system/media/bootanimation.zip
+    vendor/aokp/prebuilt/bootanimation/1080.zip:system/media/bootanimation.zip
